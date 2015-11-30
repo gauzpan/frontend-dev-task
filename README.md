@@ -15,9 +15,9 @@ simple HTML (I've already supplied a sample for this) feel free to make necessar
 Here are few details:
 - Serves static content from the static_content & bower_compoenents directory
 -- You can have your JS, CSS files & images/sprites in static_content & any plugins can go in bower_components
-- Router is @ controllers/router.js
-- Web controllers are @ controllers/web/
-- API controllers are @ controller/api/
+- Router is at controllers/router.js
+- Web controllers are at controllers/web/
+- API controllers are at controller/api/
 
 ## How to setup
 - Make sure you have got node & npm installed
