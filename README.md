@@ -1,20 +1,20 @@
 # Front End developer task
 ## Overview
 
-We've set up a simple NodeJS application which gives you a bunch of APIs to access and manipulate data. You will need to use these APIs and build an UI. 
+We've set up a simple NodeJS application which gives you a bunch of APIs to access and manipulate data. You will need to use these APIs and build an app. You are free to use whatever frontend technologies you like.
 
 We're using jade for templating, you are free to choose whatever suits you. Feel free to make necessary changes in the server side code.
 
 ## API's
-- GET /api/message/ - get a list of messages
-- GET /api/message/:id - get one message
-- DELETE /api/message/:id - delete one message
+- `GET /api/message/ - get a list of messages`
+- `GET /api/message/:id - get one message`
+- `DELETE /api/message/:id - delete one message`
 
-** Your task, will be to consume these API's & build a UI which looks beautiful & more importantly feels intutive for our users. **
+*** Your task, will be to consume these API's & build a UI which looks beautiful & more importantly feels intutive for our users. ***
 
-Here are few details:
+Here are few details which you might need:
 
-- Serves static content from the static_content & bower_compoenents directory
+- Serves static content from the static_content & bower_components directory
 - You can have your JS, CSS files & images/sprites in static_content & any plugins can go in bower_components
 - Router is at controllers/router.js
 - Web controllers are at controllers/web/
