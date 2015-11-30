@@ -1,9 +1,9 @@
 # Front End developer task
 ## Overview
 
-We've set up a simple NodeJS application which gives you a bunch of API's to access and manipulate data in the server
-via REST API's and can also render HTML pages. We're using jade for templating, if you want to change to something else or even roll with
-simple HTML (I've already supplied a sample for this) feel free to make necessary changes in the server side code.
+We've set up a simple NodeJS application which gives you a bunch of APIs to access and manipulate data. You will need to use these APIs and build an UI. 
+
+We're using jade for templating, you are free to choose whatever suits you. Feel free to make necessary changes in the server side code.
 
 ## API's
 - GET /api/message/ - get a list of messages
