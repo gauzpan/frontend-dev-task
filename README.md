@@ -23,7 +23,7 @@ Here are few details which you might need:
 ## How to setup
 
 - Make sure you have got node & npm installed
-- Clone the repo
+- Fork & clone this repo
 - Navigate into src directory
-- Execute `npm install`
-- Execute `npm start`
+- Execute `npm install` - this installs the dependencies
+- Execute `npm start` - this will start the server
