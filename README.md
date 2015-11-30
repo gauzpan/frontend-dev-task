@@ -13,15 +13,17 @@ We're using jade for templating, you are free to choose whatever suits you. Feel
 ** Your task, will be to consume these API's & build a UI which looks beautiful & more importantly feels intutive for our users. **
 
 Here are few details:
+
 - Serves static content from the static_content & bower_compoenents directory
--- You can have your JS, CSS files & images/sprites in static_content & any plugins can go in bower_components
+- You can have your JS, CSS files & images/sprites in static_content & any plugins can go in bower_components
 - Router is at controllers/router.js
 - Web controllers are at controllers/web/
 - API controllers are at controller/api/
 
 ## How to setup
+
 - Make sure you have got node & npm installed
-- Clone
+- Clone the repo
 - Navigate into src directory
 - Execute npm install
 - Execute npm start
