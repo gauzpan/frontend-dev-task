@@ -25,5 +25,5 @@ Here are few details which you might need:
 - Make sure you have got node & npm installed
 - Clone the repo
 - Navigate into src directory
-- Execute npm install
-- Execute npm start
+- Execute `npm install`
+- Execute `npm start`
