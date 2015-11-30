@@ -6,9 +6,9 @@ We've set up a simple NodeJS application which gives you a bunch of APIs to acce
 We're using jade for templating, you are free to choose whatever suits you. Feel free to make necessary changes in the server side code.
 
 ## API's
-- `GET /api/message/ - get a list of messages`
-- `GET /api/message/:id - get one message`
-- `DELETE /api/message/:id - delete one message`
+- `GET /api/message/` - get a list of messages
+- `GET /api/message/:id` - get one message
+- `DELETE /api/message/:id` - delete one message
 
 ***Your task, will be to consume these API's & build a UI which looks beautiful & more importantly feels intutive. For an example of how the UI should look like, check out our app CloudMagic.***
 
