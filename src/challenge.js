@@ -60,6 +60,9 @@
         try {
             this._server                = this._app.listen(PORT);
             this._server.maxConnections = MAX_CONNECTIONS;
+            console.log('Started listening on port ' + PORT);
+            console.log('Please point your browser to 127.0.0.1:' + PORT +
+                        ' to see the result. Please note that you\'ll need to restart the server after making changes.')
         } catch (e) {
             console.log(e);
             console.log('Something went wrong while staring the app. Please see if someone else is listening on the same port.')
