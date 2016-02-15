@@ -1,5 +1,5 @@
 /**
- * @author: Ashwin
+ * @author: Ashwin 
  */
 module.exports = function (router) {
 
@@ -9,6 +9,40 @@ module.exports = function (router) {
 
     var DUMMY_BODY = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas leo sit amet justo vehicula tincidunt. Nullam a ipsum vitae ipsum feugiat sodales gravida quis nibh. Integer sed condimentum mauris. Maecenas venenatis purus quis nisl consequat, ac iaculis mi congue. Nunc ac turpis vel sapien maximus iaculis. Nunc in mollis lectus. Cras sem nisi, auctor eu malesuada consectetur, bibendum et tortor. Ut interdum nisl sed magna ullamcorper, ut pulvinar ligula luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Etiam in tempor est. Praesent egestas rutrum ex sed ornare. Duis mi neque, vehicula et vehicula ut, convallis nec felis. Morbi mattis vitae massa sed rhoncus. Integer pulvinar tincidunt eros. Etiam ornare metus ac viverra placerat. Integer vel nunc et quam varius accumsan at in nibh. Fusce at luctus odio, vitae dictum mauris. Nulla facilisi. Cras non lorem porta, porta neque quis, ornare urna. Proin eleifend pretium neque id vestibulum. Ut condimentum mauris nec ipsum mollis molestie. Vivamus at erat lorem. In odio dui, molestie a accumsan sit amet, semper sed arcu. Sed ornare sed justo a ultrices. Fusce non consectetur lacus.'
 
+    /**
+     * @author Gaurav Pandvia
+     * This will bookmark the particular message
+     */
+     router.post('/bookmark/:id',function(req, res, next){
+         var id  = Number(req.params.id);
+         var msg = messages[id];
+          if (!msg) {
+            res.status(404).send({status: 404});
+            return;
+          }
+        if(msg.hasOwnProperty('isStarred')) 
+            msg.isStarred = !msg.isStarred;
+
+        res.status(201).send({status: 201});
+
+     });
+      /**
+     * @author Gaurav Pandvia
+     * This will mark as read the particular message
+     */
+     router.post('/markRead/:id',function(req, res, next){
+         var id  = Number(req.params.id);
+         var msg = messages[id];
+          if (!msg) {
+            res.status(404).send({status: 404});
+            return;
+          }
+        if(msg.hasOwnProperty('isRead') && !msg.isRead) 
+            msg.isRead = true;
+
+        res.status(201).send({status: 201});
+
+     });
     /**
      * This will give you a list of messages currently available
      */
@@ -32,6 +66,7 @@ module.exports = function (router) {
         var id      = Number(req.params.id);
         var msg     = msgCopy[id];
         if (!msg) {
+
             res.status(404).send({status: 404});
             return;
         }
@@ -53,8 +88,8 @@ module.exports = function (router) {
             res.status(400).send({status: 400});
             return;
         }
-
         delete messages[id];
         res.status(204).send({status: 204});
     });
+
 };

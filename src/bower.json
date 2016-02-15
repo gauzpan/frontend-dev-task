@@ -1,0 +1,22 @@
+{
+  "name": "front-end-challenge",
+  "description": "Plugins",
+  "main": "",
+  "authors": [
+    "Gaurav"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/webyog/frontend-dev-task",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "^2.2.0",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

@@ -3,6 +3,57 @@ html
     head
         title= title
         link(rel='stylesheet', href='/static/css/home.css')
-        script(type='text/javascript', src='/static/js/home.js')
+        link(rel='stylesheet', href='/bower/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/bower/font-awesome/css/font-awesome.min.css')
+        script(type='text/javascript', src='/bower/jQuery/dist/jquery.min.js')
+        script(type='text/javascript', src='/bower/bootstrap/dist/js/bootstrap.min.js')
     body(class='light-primary-color')
-        h1 Good Luck!
+        div#main
+          header
+           div.col-sm-12#app--header-logo
+            a.pull-left
+             img(src='/static/images/cloudmagic-logo.png')
+          div#wrapper
+            div.app--message-container
+                div.app--container-heading 
+                 a(href='/') Inbox
+                div.app--container-body
+                 div#pageLoader.text-center.hidden
+                    span
+                     img(src='/static/images/loading.gif')
+               
+                 div.row.removeMargin.template.hidden.messageBox
+                       
+                       div.col-sm-12.message--participants
+                        span.fa.fa-group
+                        span.participant
+                        span.timestamp
+                        a.pull-right.bookmark 
+                         span.fa.fa-star-o
+                        a.pull-right.deleteMsg
+                         span.fa.fa-trash
+                       div.col-sm-12.message--subject
+                       div.col-sm-12.message--preview
+                 div.row.removeMargin.message--body.hidden
+                      div.col-sm-12.message--body-subject
+                       span.fa.fa-envelope.small
+                       span.subject
+                       a.pull-right.bookmark 
+                         span.fa.fa-star-o
+                        a.pull-right.deleteMsg
+                         span.fa.fa-trash
+                      div.col-sm-12.message--body-participant
+                       span.participantText
+                       span.timestamp.pull-right
+                      div.col-sm-12.message--body-complete
+
+          div#deleteModal.modal.fade(role='dialog')
+           div.modal-dialog
+            div.modal-content
+             div.modal-header
+              button.close(data-dismiss='modal',type='button') &times;
+              h4 Delete
+             div.modal-body
+              span Are you sure you want to delete this message from the inbox.
+              button#deleteBtn.btn.btn-primary(data-dismiss='modal',type='button') Delete
+        script(type='text/javascript', src='/static/js/home.js')

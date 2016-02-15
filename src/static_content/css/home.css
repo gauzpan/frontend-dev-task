@@ -1,0 +1,129 @@
+
+body{
+    color: #3d3d3d;
+    border: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    min-width: 300px; 
+}
+.removeMargin{
+	margin-left : 0 !important;
+	margin-right: 0 !important;
+}
+#pageLoader img{
+	max-height : 100px;
+}
+header{
+	position: relative;
+    height: 40px;
+    padding: 5px;
+    background: #78dcdc;
+}
+
+.app--header-logo{
+	position : absolute;
+}
+header #app--header-logo a img{
+	max-height: 30px
+}
+
+.app--message-container{
+	margin: 20px 10%;
+    display: block;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.app--container-heading{
+	    background: #ebeeee;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0px !important;
+}
+.app--container-heading a{
+	color : #3d3d3d;
+}
+
+.app--container-body{
+	padding: 10px;
+	min-height: 150px;
+}
+.messageBox {
+    padding: 10px;
+    background: #f8f8f8;
+    color: #3d3d3d;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #E1E2E4;
+    border-left: 4px solid #78DCDC;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.messageBox:hover{
+	border-color: #78DCDC;
+}
+.message--participants{
+	font-size: 18px;
+	font-weight: 600;
+}
+span.participant{
+	margin-left: 10px;
+}
+a.starred span:hover{
+	color: orange;
+	cursor: pointer;
+}
+a.starred span.fa-star{
+	color: orange;
+}
+a.deleteMsg span{
+	cursor:pointer;
+}
+.messageBox.read {
+	color: #696969;
+}
+.messageBox.read .message--participants{
+	font-weight: normal;
+}
+.message--subject{
+	font-size: 16px;
+}
+.message--preview{
+	margin-top: 5px;
+    border-top: 1px solid #E1E2e4;
+    font-size: 13px;
+}
+a.deleteMsg{
+	margin-right: 20px;
+}
+.message--body{
+	background: #fff;
+	padding: 20px 30px;
+}
+.message--body-subject{
+	border-bottom: 1px solid #e1e2e4;
+	padding-bottom: 5px;
+}
+.message--body-subject .subject{
+	font-size: 18px;
+	margin-left: 10px;
+}
+.message--body-participant{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.message--body-complete{
+	    margin-top: 15px;
+    margin-left: 10px;
+}
+.timestamp{
+	font-size: 10px;
+	float: right;
+    margin-left: 20px;
+}

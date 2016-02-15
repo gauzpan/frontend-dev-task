@@ -1,36 +1,44 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
-2 info using npm@2.5.1
-3 info using node@v0.12.0
-4 verbose node symlink /usr/local/bin/node
+2 info using npm@3.7.1
+3 info using node@v0.10.25
+4 verbose node symlink /usr/bin/node
 5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart front-end-challenge@1.0.0
-7 info start front-end-challenge@1.0.0
-8 verbose unsafe-perm in lifecycle true
-9 info front-end-challenge@1.0.0 Failed to exec start script
-10 verbose stack Error: front-end-challenge@1.0.0 start: `node server.js`
-10 verbose stack Exit status 1
-10 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
-10 verbose stack     at EventEmitter.emit (events.js:110:17)
-10 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
-10 verbose stack     at ChildProcess.emit (events.js:110:17)
-10 verbose stack     at maybeClose (child_process.js:1008:16)
-10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
-11 verbose pkgid front-end-challenge@1.0.0
-12 verbose cwd /Users/ashwins/workspace/frontend-dev-task/src
-13 error Darwin 15.0.0
-14 error argv "node" "/usr/local/bin/npm" "start"
-15 error node v0.12.0
-16 error npm  v2.5.1
-17 error code ELIFECYCLE
-18 error front-end-challenge@1.0.0 start: `node server.js`
-18 error Exit status 1
-19 error Failed at the front-end-challenge@1.0.0 start script 'node server.js'.
-19 error This is most likely a problem with the front-end-challenge package,
-19 error not with npm itself.
-19 error Tell the author that this fails on your system:
-19 error     node server.js
-19 error You can get their info via:
-19 error     npm owner ls front-end-challenge
-19 error There is likely additional logging output above.
-20 verbose exit [ 1, true ]
+6 info lifecycle front-end-challenge@1.0.0~prestart: front-end-challenge@1.0.0
+7 silly lifecycle front-end-challenge@1.0.0~prestart: no script for prestart, continuing
+8 info lifecycle front-end-challenge@1.0.0~start: front-end-challenge@1.0.0
+9 verbose lifecycle front-end-challenge@1.0.0~start: unsafe-perm in lifecycle true
+10 verbose lifecycle front-end-challenge@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/minjar80/task/frontend-dev-task/src/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/minjar80/bin:/usr/local/java/jdk1.7.0_71/bin
+11 verbose lifecycle front-end-challenge@1.0.0~start: CWD: /home/minjar80/task/frontend-dev-task/src
+12 silly lifecycle front-end-challenge@1.0.0~start: Args: [ '-c', 'node server.js' ]
+13 silly lifecycle front-end-challenge@1.0.0~start: Returned: code: 8  signal: null
+14 info lifecycle front-end-challenge@1.0.0~start: Failed to exec start script
+15 verbose stack Error: front-end-challenge@1.0.0 start: `node server.js`
+15 verbose stack Exit status 8
+15 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+15 verbose stack     at EventEmitter.emit (events.js:98:17)
+15 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+15 verbose stack     at ChildProcess.EventEmitter.emit (events.js:98:17)
+15 verbose stack     at maybeClose (child_process.js:743:16)
+15 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:810:5)
+16 verbose pkgid front-end-challenge@1.0.0
+17 verbose cwd /home/minjar80/task/frontend-dev-task/src
+18 error Linux 3.16.0-41-generic
+19 error argv "node" "/usr/local/bin/npm" "start"
+20 error node v0.10.25
+21 error npm  v3.7.1
+22 error code ELIFECYCLE
+23 error front-end-challenge@1.0.0 start: `node server.js`
+23 error Exit status 8
+24 error Failed at the front-end-challenge@1.0.0 start script 'node server.js'.
+24 error Make sure you have the latest version of node.js and npm installed.
+24 error If you do, this is most likely a problem with the front-end-challenge package,
+24 error not with npm itself.
+24 error Tell the author that this fails on your system:
+24 error     node server.js
+24 error You can get information on how to open an issue for this project with:
+24 error     npm bugs front-end-challenge
+24 error Or if that isn't available, you can get their info via:
+24 error     npm owner ls front-end-challenge
+24 error There is likely additional logging output above.
+25 verbose exit [ 1, true ]
